@@ -1,0 +1,54 @@
+
+h1 {
+  font-family: 'Courier Prime', Courier, monospace;
+  line-height: 110%;
+  margin-block: 0.67em;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+body {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    font-weight: 400;
+}
+
+code {
+  font-family: 'VT323';
+  font-size: 1.2rem;
+  border-radius: 4px;
+  line-height: 1.3rem;
+}
+
+.language-plaintext.highlighter-rouge {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.highlight {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 4px;
+}
+
+a {
+  font-weight: bolder;
+  /* text-decoration: none; */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
