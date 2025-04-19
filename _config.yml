@@ -18,21 +18,33 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: christopher drum
+author: Christopher Drum
+email: development@christopherdrum.com
+description: > # this means to ignore newlines until "baseurl:"
+  Blog posts, devlogs, projects, and links. 
+  Started with Objective-C before the iPhone, moved into Lua on the Pico-8, 
+  and am now working more in standard C.
+  
+  I like examining and pulling apart older software to understand how it worked.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  christopherdrum
+
+permalink: /posts/:year/:month/:slug
 
 # Build settings
-theme: minima
+theme: no-style-please
 plugins:
   - jekyll-feed
+
+favicon: "favicon.png"
+
+theme_config:
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+  lowercase_titles: true # show titles in lowercase in lists
 
 # Exclude from processing.
 # The following items will not be processed, by default.

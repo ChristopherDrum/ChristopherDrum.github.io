@@ -1,0 +1,59 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+
+  - title: posts
+    post_list: true
+  
+  - title: selected devlogs at itch.io
+    entries:
+      - title: mystery house, excavated
+        url: https://christopherdrum.itch.io/mystery-house/devlog/545148/mystery-house-excavated
+      - title: big effort, smallish payoff
+        url: https://christopherdrum.itch.io/statusline/devlog/862712/big-effort-small-ish-payoff
+      - title: 7-10 split? fore!
+        url: https://christopherdrum.itch.io/statusline/devlog/879412/7-10-split-fore
+      - title: ask pig about pig
+        url: https://christopherdrum.itch.io/statusline/devlog/858867/ask-pig-about-pig-162000-ops
+      - title: customizing eliza scripts
+        url: https://christopherdrum.itch.io/eliza8/devlog/255329/customizing-eliza8-scripts
+  
+  - title: major projects
+    entries:
+      - title: portable executable zork
+        url: https://github.com/ChristopherDrum/pez
+      - title: status line v3.0
+        url: https://christopherdrum.itch.io/statusline
+      - title: mystery house remodeled
+        url: https://christopherdrum.itch.io/mystery-house
+      - title: picocalc
+        url: https://christopherdrum.itch.io/picocalc
+      - title: eliza8
+        url: https://christopherdrum.itch.io/eliza8
+      - title: and minor ones...
+        entries:
+          - title: pirouette
+            url: https://www.lexaloffle.com/bbs/?tid=54517
+          - title: pub hubbub
+            url: https://christopherdrum.itch.io/pub-hubbub
+          - title: strike force
+            url: https://christopherdrum.itch.io/strike-force
+          - title: one-bit wonder
+            url: https://www.lexaloffle.com/bbs/?tid=53207
+          - title: versawriter8
+            url: https://www.lexaloffle.com/bbs/?tid=53461
+
+  - title: say hello
+    entries:
+      - title: BlueSky
+        url: https://bsky.app/profile/christopherdrum.bsky.social
+      - title: Mastodon
+        url: https://hachyderm.io/@christopherdrum
+      - title: itch.io
+        url: https://christopherdrum.itch.io/
+      - title: git
+        url: https://github.com/christopherdrum
+
+  - title: rss
+    url: feed.xml
