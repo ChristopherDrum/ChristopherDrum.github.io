@@ -8,7 +8,7 @@ slug: stewart_cheifet_passing
 ---
 There are people whose impact on our life is not understood until we hear of that person's passing. Time keeps ticking, we know rationally that everyone dies, and yet there are those whom we hear the news and feel a kind of itch; a little part inside that reacts more viscerally than expected.
 
-Stewart Cheifet's passing on December 28, 2025 gave me that itch.
+[Stewart Cheifet's passing](https://obits.goldsteinsfuneral.com/stewart-cheifet) on December 28, 2025 gave me that itch.
 
 In a recent blog post [I wrote about HyperCard,](https://stonetools.ghost.io/hypercard-mac) I used Cheifet's image from _Computer Chronicles_ at the top, and made a little joke animation later in the same post, referencing the man. I respected what he had built, and also wanted to poke fun at my own obsession over a 40 year-old television show and its host. I'm well into my 50s now; surely there are better outlets for my waning energies.
 
