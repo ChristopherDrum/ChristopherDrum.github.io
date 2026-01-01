@@ -10,6 +10,8 @@ slug: porting_infocom_with_cosmo
 
 ![Title Screenshot]( {{ page.header_image }} ){:width="100%"}
 <br><br>
+*(updated April 28, 2025 to reflect new info from comments on the Hacker News post)*
+
 I made standalone executables of the [Zork trilogy](https://en.wikipedia.org/wiki/Zork), ported from original Infocom UNIX source to Cosmopolitan, are available for Windows/Mac/Linux/bsd for arm/x86 machines. These require no further installation nor external files to play.
 
 Here's how to download and play Zork on the CLI:
@@ -21,6 +23,7 @@ chmod +x zork1
 # This one executable runs on any and all targetted platforms
 # `zork2` and `zork3` are available, for trilogy completionists
 # Windows users, add `.exe` to the downloaded file to make Windows happy
+# Linux users with .NET Mono libraries might need to run `sh ./zork1` 
 ```
 
 Want to run an arbitrary .z3 text adventure file?<br>
@@ -39,6 +42,8 @@ Here's the story of how and why I decided to do this project and what I learned 
 Over the years I've spent a lot of time looking at and thinking about the Infocom z-machine. Briefly put, Infocom text adventures were released as platform-independent game files which ran within platform-specific virtual machines for every system the company supported. The spec for that virtual machine is known as the "z-machine."
 
 &ensp;I don't know if they were "the first" to ship a commercial product using a VM on home computers, but they were definitely one of the first. In the 1980's, unique computer platforms were released at a dizzying rate ([Zork 1 released on at least 18 platforms](https://www.mobygames.com/game/50/zork-the-great-underground-empire/releases/)) so it was important to be able to pivot onto new systems quickly. By using a VM, Infocom could rapidly bring their entire library of games to any new machine.
+
+*UPDATE:* Commentor ssrc noted in the Hacker News post that [quite a few vms shipped](https://news.ycombinator.com/item?id=43677909#43678260) for home computers before Zork, especially in the development community, as with Forth, Apple Pascal, and others. Scott Adams's adventures also used a kind of vm, and he beat Zork to market.
 
 &ensp;These days gamers have a plethora of choice for modern z-machine interpreters, but back then it was proprietary code. Only Infocom could make a z-machine interpreter which they dubbed ZIP, "Zork Interpreter Program."
 
@@ -77,6 +82,8 @@ My day job is in Swift and Objective-C, and [my](https://www.lexaloffle.com/bbs/
 &ensp;Function parameters are only enforced by "trust" in forward declarations; they don't need to be declared. And heck, why even bother with a shared forward declaration at all when you can locally forward declare external functions within a calling function?
 
 &ensp;`if` statements using `THEN` instead of braces? I guess you had to be there.
+
+*UPDATE:* Commentor ganache on the Hacker News post notes that this is not a K&R style if/then. Rather, `THEN` has been defined in the original source header as a no-op. Commentor pcwalton says [it comes from Bergenol](https://oldhome.schmorp.de/marc/bournegol.html).
 
 &ensp;This is all to say that it took time to adjust my reading comprehension skills for the code and make sense of what I was looking at.
 
@@ -133,6 +140,8 @@ newlin()
 ### Function declarations (and the lack thereof)
 
 A lot of compilation errors were related to functions being called that hadn't been declared yet. This was fairly trivial to handle; here's an example of the pattern used in the original code.
+
+*UPDATE:* Commentor o11c on the Hacker News post noted that these flags are useful for this problem.<br> `-Werror=missing-declarations -Werror=redundant-decls`
 
 ```c
 char *getpag(ptr, page)

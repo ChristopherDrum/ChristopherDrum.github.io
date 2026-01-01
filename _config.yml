@@ -22,11 +22,9 @@ title: christopher drum
 author: Christopher Drum
 email: development@christopherdrum.com
 description: > # this means to ignore newlines until "baseurl:"
-  Blog posts, devlogs, projects, and links. 
-  Started with Objective-C before the iPhone, moved into Lua on the Pico-8, 
-  and am now working more in standard C.
-  
+  Essays, devlogs, project post-mortems, and links. 
   I like examining and pulling apart older software to understand how it worked.
+  I also maintain another blog called [Stone Tools](https://stonetools.ghost.io), which re-examines productivity software of the golden age of retrocomputing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  christopherdrum
