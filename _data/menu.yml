@@ -21,6 +21,8 @@ entries:
   
   - title: major projects
     entries:
+      - title: stone tools, a blog about retro-productivity software circa 1977 - 1995
+        url: https://stonetools.ghost.io
       - title: portable executable zork
         url: https://github.com/ChristopherDrum/pez
       - title: status line v3.0
