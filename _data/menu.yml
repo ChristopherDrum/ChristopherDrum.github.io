@@ -5,6 +5,9 @@ entries:
 
   - title: posts
     post_list: true
+
+  - title: stone tools, my blog about productivity software during the retro golden age (1977 - 1995)
+    url: https://stonetools.ghost.io
   
   - title: selected devlogs at itch.io
     entries:
