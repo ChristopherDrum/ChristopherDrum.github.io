@@ -32,9 +32,9 @@ github_username:  christopherdrum
 permalink: /posts/:year/:month/:slug
 
 # Build settings
-theme: no-style-please
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme
+remote_theme: riggraz/no-style-please
 
 favicon: "favicon.png"
 
